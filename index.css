@@ -1,0 +1,176 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #3d087b;
+  }
+  
+  .time_head {
+    display:grid;
+  }
+  .logo{
+    grid-template-columns: 1/1;
+    position:relative;
+    left:15%;
+    top:120%;
+  }
+  
+  .upper_card {
+    position: absolute;
+    background-color: #fff;
+    width: 426px;
+    height: 100px;
+    z-index: 3;
+    border-radius: 10px;
+    position:relative;
+    left:60%;
+    top:5%;
+  }
+  .clock {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #3d087b;
+  }
+  
+  #nhour {
+    background-image: url(./images/timeline.png);
+    padding: 8px;
+    margin-top:10px;
+  }
+  #nmin {
+    background-image: url(./images/timeline.png);
+    padding: 8px;
+    margin-top:10px;
+  }
+  
+  #nsec {
+    background-image: url(./images/timeline.png);
+    padding: 8px;
+    margin-top:10px;
+  }
+  #am_pm {
+    background-image: url(./images/AM_bg.png);
+    padding: 8px;
+    color: white;
+    margin-top:10px;
+  }
+  
+  .middle_card {
+    position:relative;
+    left:62%;
+    bottom:27%;
+    background-color: white;
+    opacity: 0.7;
+    width: 350px;
+    height: 100px;
+    z-index: 2;
+    transform: translateY(15px);
+    border-radius: 10px;
+    
+  }
+  .lower_card {
+    position: relative;
+    background-color: white;
+    opacity: 0.5;
+    width: 300px;
+    height: 100px;
+    z-index:-5;
+    transform: translateY(30px);
+    border-radius: 10px;
+    left: 63.5%;
+    bottom:59%;
+    box-shadow: 20px 20px 60px #3d087b, -20px -20px 60px #3d087b;
+  }
+  
+  .content_container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    position:relative;
+    left:5%;
+    bottom:200px;;
+  }
+  
+  .time_set_card {
+    width: 566px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .time p {
+    font-size: 23px;
+    color: #3d087b;
+  }
+  .time select {
+    font-size: 20px;
+    width: 150px;
+  }
+  
+  .wake_time {
+    display: flex;
+    justify-content: space-around;
+  }
+  .lunch_time {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nap_time {
+    display: flex;
+    justify-content: space-around;
+  }
+  #greeting_msg {
+    border-radius: 10px;
+    color: white;
+    margin: 10px 0px;
+    /* background-color: #464444; */
+    padding: 20px 10px;
+    font-family: "Baumans", cursive;
+    font-weight: bolder;
+  }
+  .party_msg {
+    border-radius: 4px;
+    opacity: 1;
+    color: white;
+    background: linear-gradient(to left, #6e54ec, #cb52f8, #fc5eff, #f1a7c5);
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .content_image {
+    background-color: white;
+    width: 450px;
+    height: 400px;
+    position:relative;
+    right:70px;
+    border-radius: 10px;
+  }
+  
+  #food_msg {
+    font-size: 25px;
+    color: #6e54ec;
+    position: absolute;
+    margin: 20px 0px 0px 20px;
+    font-family: "Baumans", cursive;
+    font-weight: bolder;
+  }
+  #food_image {
+    background-image: url(./images/default_clock.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 450px;
+    height: 400px;
+  }
